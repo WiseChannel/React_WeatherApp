@@ -1,11 +1,9 @@
 import React from 'react'
 
-class Titles extends React.Component {
-    render() {
-        return(
-            <div>Title</div>
-        )
-    }
+const Titles = () => {
+    return (
+        <div>Titles</div>
+    )
 }
 
 export default Titles
