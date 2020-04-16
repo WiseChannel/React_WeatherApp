@@ -1,8 +1,22 @@
 import React from 'react'
 
-const Titles = () => {
+//import components
+import '../style/index.css'
+
+const Titles = props => {
+
+    const { city, country } = props
     return (
-        <div>Titles</div>
+        <div>
+            {city && country
+                ?
+                <div className='Titles'>
+                    <h2>City:{city}</h2>
+                    <h2>Country:{country}</h2>
+                </div>
+                : ''
+            }
+        </div>
     )
 }
 

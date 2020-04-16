@@ -6,7 +6,7 @@ import Form from "./components/elements/Form";
 import Weather from "./components/elements/Weather";
 import { API_KEY } from "./components/config/config";
 import Axios from "axios";
-
+import './components/style/index.css'
 
 export class App extends Component {
 
@@ -53,7 +53,10 @@ export class App extends Component {
     render() {
         return(
             <div className='App'>
-                <Titles />
+                <Titles
+                    city={this.state.city}
+                    country={this.state.country}
+                />
                 <Form getWeather={this.getWeather}/>
                 <Weather
                     temperature={this.state.temperature}
